@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SmartControl" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/coral</item>
+        <item name="colorSurface">@color/isabelline</item>
+        <item name="backgroundColor">@color/isabelline</item>
+        <item name="android:windowBackground">@color/isabelline</item>
+        <item name="android:navigationBarColor">@color/isabelline</item>
+        <item name="colorSurfaceVariant">@color/isabelline</item>
+        <item name="colorPrimaryDark">?attr/backgroundColor</item>
+
+
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.SmartRecipes" parent="Base.Theme.SmartControl" />
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/coral</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.SmartControl</item>
+    </style>
+
+    <style name="Theme.SmartControl" parent="Base.Theme.SmartControl" />
+</resources>
